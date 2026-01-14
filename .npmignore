@@ -1,0 +1,34 @@
+# Source files (compiled to dist/)
+src/
+tsconfig.json
+
+# Configuration
+.env
+.env.*
+*.config.js
+*.config.ts
+
+# Development
+*.test.ts
+*.spec.ts
+__tests__/
+coverage/
+.nyc_output/
+
+# Credentials (defense in depth)
+credentials.json
+secrets.json
+*.key
+*.pem
+
+# Editor/IDE
+.vscode/
+.idea/
+
+# Git
+.git/
+.gitignore
+
+# Logs
+*.log
+logs/
