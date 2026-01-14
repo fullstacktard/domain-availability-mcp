@@ -1,4 +1,4 @@
-# fst-domain-mcp
+# domain-availability-mcp
 
 MCP (Model Context Protocol) server for comprehensive domain research, providing:
 
@@ -18,12 +18,12 @@ MCP (Model Context Protocol) server for comprehensive domain research, providing
 ## Installation
 
 ```bash
-npm install @fullstacktard/fst-domain-mcp
+npm install domain-availability-mcp
 ```
 
 Or globally:
 ```bash
-npm install -g @fullstacktard/fst-domain-mcp
+npm install -g domain-availability-mcp
 ```
 
 ## Quick Start
@@ -38,7 +38,7 @@ Add to your MCP configuration:
   "mcpServers": {
     "domain-search": {
       "command": "npx",
-      "args": ["@fullstacktard/fst-domain-mcp"]
+      "args": ["domain-availability-mcp"]
     }
   }
 }
@@ -50,7 +50,7 @@ Add to your MCP configuration:
   "mcpServers": {
     "domain-search": {
       "command": "npx",
-      "args": ["@fullstacktard/fst-domain-mcp"],
+      "args": ["domain-availability-mcp"],
       "env": {
         "TLD_LIST_API_KEY": "your-tld-list-api-key",
         "NAMECHEAP_API_USER": "your-api-user",
@@ -66,7 +66,7 @@ Add to your MCP configuration:
 ### Programmatic Usage
 
 ```typescript
-import { DomainMcpServer, createConfigFromEnv } from '@fullstacktard/fst-domain-mcp';
+import { DomainMcpServer, createConfigFromEnv } from 'domain-availability-mcp';
 
 const config = createConfigFromEnv();
 const server = new DomainMcpServer(config);
@@ -317,7 +317,7 @@ The server uses a modular provider architecture for extensibility.
 ### Adding Custom Providers
 
 ```typescript
-import { ProviderRegistry, TldListProvider } from '@fullstacktard/fst-domain-mcp';
+import { ProviderRegistry, TldListProvider } from 'domain-availability-mcp';
 
 // Custom pricing provider
 class MyPricingProvider implements PricingProvider {

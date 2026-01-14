@@ -1,13 +1,13 @@
 {
-  "name": "@fullstacktard/fst-domain-mcp",
+  "name": "domain-availability-mcp",
   "version": "0.3.0",
   "description": "MCP server for domain availability, multi-registrar pricing, parking detection, and aftermarket/auction search",
   "publishConfig": {
-    "access": "restricted"
+    "access": "public"
   },
   "type": "module",
   "bin": {
-    "fst-domain-mcp": "./dist/cli.js"
+    "domain-availability-mcp": "./dist/cli.js"
   },
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
@@ -47,12 +47,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/fullstacktard/fst-domain-mcp.git"
+    "url": "git+https://github.com/fullstacktard/domain-availability-mcp.git"
   },
   "bugs": {
-    "url": "https://github.com/fullstacktard/fst-domain-mcp/issues"
+    "url": "https://github.com/fullstacktard/domain-availability-mcp/issues"
   },
-  "homepage": "https://github.com/fullstacktard/fst-domain-mcp#readme",
+  "homepage": "https://github.com/fullstacktard/domain-availability-mcp#readme",
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.23.0",
     "commander": "^12.0.0",

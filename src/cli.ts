@@ -6,7 +6,7 @@ async function main(): Promise<void> {
   const config = createConfigFromEnv();
 
   // Log configuration status to stderr (not stdout, as that's for MCP)
-  console.error('fst-domain-mcp v0.3.0: Starting with configuration:');
+  console.error('domain-availability-mcp v0.3.0: Starting with configuration:');
   console.error(`  - RDAP: Enabled (no config required)`);
   console.error(`  - Pricing: ${config.tldListApiKey ? 'TLD-List.com (54 registrars)' : 'Porkbun (896 TLDs, FREE)'}`);
   const hasAuctionsToken = !!config.namecheap?.auctionsToken;
